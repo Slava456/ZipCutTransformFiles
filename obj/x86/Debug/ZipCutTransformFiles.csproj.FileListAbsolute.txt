@@ -1,0 +1,19 @@
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\bin\x86\Debug\ZipCutTransformFiles.exe.config
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\bin\x86\Debug\ZipCutTransformFiles.exe
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\bin\x86\Debug\ZipCutTransformFiles.pdb
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.Properties.Resources.resources
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.csproj.GenerateResource.cache
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.csproj.CoreCompileInputs.cache
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.exe
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.pdb
+C:\Users\TYNIA\Desktop\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.Forms.MainForm.resources
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\bin\x86\Debug\ZipCutTransformFiles.exe.config
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\bin\x86\Debug\ZipCutTransformFiles.exe
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\bin\x86\Debug\ZipCutTransformFiles.pdb
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.Forms.MainForm.resources
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.Properties.Resources.resources
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.csproj.GenerateResource.cache
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.csproj.CoreCompileInputs.cache
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.exe
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.pdb
+D:\Projects and classes\GItHubReposit\ZipCutTransformFiles\obj\x86\Debug\ZipCutTransformFiles.csprojAssemblyReference.cache
