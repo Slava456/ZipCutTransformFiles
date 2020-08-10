@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Threading;
 using ZipCutTransformFiles.Classes;
 
 namespace ZipCutTransformFiles.Forms
@@ -84,12 +85,16 @@ namespace ZipCutTransformFiles.Forms
                 if (_tbdc.isDirsNotNullOrEmpty() && _tbdc.isDirsOther())
                 {
                     lbl.Visible = true;
-                    _tbdc.TakeData(_ctbWidth.GiveValFromCTB(), _ctbHeight.GiveValFromCTB(), _ccfwf);
-                    _ccfwf.CreateDirsOut();
-                    pb.Maximum = _tbdc.GetGiveCountFileVal();
-                    pb.Value = 0;
-                    _ccfwf.TransformAndSaveFiles(pb, lbl);
-                    string strWithError = _ccfwf.GiveStringWithErrorFiles();
+                    string strWithError = string.Empty;
+                    this.Invoke(new ThreadStart(delegate
+                    {
+                        _tbdc.TakeData(_ctbWidth.GiveValFromCTB(), _ctbHeight.GiveValFromCTB(), _ccfwf);
+                        _ccfwf.CreateDirsOut();
+                        pb.Maximum = _tbdc.GetGiveCountFileVal();
+                        pb.Value = 0;
+                        _ccfwf.TransformAndSaveFiles(pb, lbl);
+                        strWithError = _ccfwf.GiveStringWithErrorFiles();
+                    }));
                     if (!string.IsNullOrEmpty(strWithError))
                     {
                         _ = MessageBox.Show("Не удалось преобразовать файлы: " + strWithError);
