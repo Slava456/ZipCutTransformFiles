@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace ZipCutTransformFiles.Classes
 {
@@ -32,6 +33,8 @@ namespace ZipCutTransformFiles.Classes
             FileInfo[] files = dir.GetFiles();
             foreach (FileInfo file in files)
             {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
                 string temppathFile = Path.Combine(directoryOut, file.Name);
                 ccfwf.PutIntoCollection(file, directory, directoryOut, temppathFile, pixWidth, pixHeigth);
                 _countFileVal++;
