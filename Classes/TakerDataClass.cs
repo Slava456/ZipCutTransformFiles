@@ -12,6 +12,8 @@ namespace ZipCutTransformFiles.Classes
         
         public void TakeData(ushort pixWidth, ushort pixHeigth, CollectionsClassForWF ccfwf)
         {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
             TakeDataFromAllDirs(_directoryIn, _directoryOut, pixWidth, pixHeigth, ccfwf);
         }
         public int GetGiveCountFileVal() => _countFileVal;

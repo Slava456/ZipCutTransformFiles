@@ -85,6 +85,7 @@ namespace ZipCutTransformFiles.Forms
                 if (_tbdc.isDirsNotNullOrEmpty() && _tbdc.isDirsOther())
                 {
                     lbl.Visible = true;
+                    lbl.Text = string.Empty;
                     string strWithError = string.Empty;
                     this.Invoke(new ThreadStart(delegate
                     {
