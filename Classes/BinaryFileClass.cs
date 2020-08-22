@@ -4,7 +4,7 @@ using System.IO.Compression;
 
 namespace ZipCutTransformFiles.Classes
 {
-    public class BinaryFileClass
+    public class BinaryFileClass : IContracts
     {
         private string _fileName;
         private string _fileFullName;
@@ -17,7 +17,7 @@ namespace ZipCutTransformFiles.Classes
             _temppathFile = temppathFile;
             _directory = directory;
         }
-        public void TransformAndSaveBF()
+        public void TransformAndSave()
         {
             if (!File.Exists(_temppathFile + ".zip"))
             {

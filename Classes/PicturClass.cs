@@ -5,7 +5,7 @@ using System.IO;
 
 namespace ZipCutTransformFiles.Classes
 {
-    public class PicturClass
+    public class PicturClass : IContracts
     {
         private string _fileName;
         private string _fileFullname;
@@ -26,7 +26,7 @@ namespace ZipCutTransformFiles.Classes
             _size = _bm.Size;
         }
 
-        public void TransformAndSavePic()
+        public void TransformAndSave()
         {
             if (!File.Exists(_temppathFile))
             {
