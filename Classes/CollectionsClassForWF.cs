@@ -15,7 +15,7 @@ namespace ZipCutTransformFiles.Classes
         {
             for (int i = 0; i < ccorign.bfclst.Count; i++)
             {
-                ccorign.bfclst[i].TransformAndSaveBF();
+                ccorign.bfclst[i].TransformAndSave();
                 lbl.Text = "Выполняются преобразования файла: " + ccorign.bfclst[i].GiveYourName();
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
@@ -24,7 +24,7 @@ namespace ZipCutTransformFiles.Classes
             }
             for (int i = 0; i < ccorign.pclst.Count; i++)
             {
-                ccorign.pclst[i].TransformAndSavePic();
+                ccorign.pclst[i].TransformAndSave();
                 lbl.Text = "Выполняются преобразования файла: " + ccorign.pclst[i].GiveYourName();
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
@@ -33,7 +33,7 @@ namespace ZipCutTransformFiles.Classes
             }
             for (int i = 0; i < ccorign.txtlst.Count; i++)
             {
-                ccorign.txtlst[i].TransformAndSaveTXT();
+                ccorign.txtlst[i].TransformAndSave();
                 lbl.Text = "Выполняются преобразования файла: " + ccorign.txtlst[i].GiveYourName();
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
@@ -42,7 +42,7 @@ namespace ZipCutTransformFiles.Classes
             }
             for (int i = 0; i < ccorign.zfclst.Count; i++)
             {
-                ccorign.zfclst[i].SaveZipFile();
+                ccorign.zfclst[i].TransformAndSave();
                 lbl.Text = "Выполняются преобразования файла: " + ccorign.zfclst[i].GiveYourName();
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
