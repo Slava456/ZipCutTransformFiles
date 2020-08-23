@@ -3,7 +3,7 @@ using System.IO.Compression;
 
 namespace ZipCutTransformFiles.Classes
 {
-    public class TxtClass
+    public class TxtClass : IContracts
     {
         private string _fileName;
         private string _fileFullName;
@@ -16,7 +16,7 @@ namespace ZipCutTransformFiles.Classes
             _temppathFile = temppathFile;
             _directory = directory;
         }
-        public void TransformAndSaveTXT()
+        public void TransformAndSave()
         {
             if (!File.Exists(_temppathFile + ".zip"))
             {

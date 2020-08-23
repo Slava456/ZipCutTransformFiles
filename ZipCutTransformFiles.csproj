@@ -69,6 +69,7 @@
     <Compile Include="Classes\DirectoryOutClass.cs" />
     <Compile Include="Classes\ErrorFileClass.cs" />
     <Compile Include="Classes\FormsClass.cs" />
+    <Compile Include="Classes\IContracts.cs" />
     <Compile Include="Classes\PicturClass.cs" />
     <Compile Include="Classes\TakerDataClass.cs" />
     <Compile Include="Classes\TxtClass.cs" />
