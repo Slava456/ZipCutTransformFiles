@@ -117,6 +117,8 @@ namespace ZipCutTransformFiles.Forms
             finally
             {
                 Clear();
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
             }
         }
     }
