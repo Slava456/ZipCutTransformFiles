@@ -109,8 +109,6 @@ namespace ZipCutTransformFiles.Forms
                 {
                     _ = MessageBox.Show("Ошибка директорий", string.Empty, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
             }
             catch (Exception ex)
             {
